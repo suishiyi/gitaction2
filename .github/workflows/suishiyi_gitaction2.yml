@@ -24,3 +24,7 @@ jobs:
           bash ./$bashname
           echo  运行完毕
           ls
+          
+          
+          
+          
