@@ -1,5 +1,5 @@
 suishiyi_gitaction2.yml
-name: suishiyi
+name: suishiyi2
 on:
   push:
     #branches: [ "main" ]
