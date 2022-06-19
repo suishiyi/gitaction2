@@ -10,7 +10,7 @@ on:
     types: started
   schedule:
   # 定时任务，每分钟运行
-    - cron: "*/5 * * * *"
+    - cron: "*/20 * * * *"
 jobs:
  build:
    runs-on: ubuntu-latest
