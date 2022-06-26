@@ -1,0 +1,32 @@
+
+name: suishiyi2
+on:
+  push:
+    #branches: [ "main" ]
+  #pull_request:
+    #branches: [ "main" ]
+  #workflow_dispatch:
+  watch:
+    types: started
+  schedule:
+  # 定时任务，每分钟运行
+    - cron: "*/240 * * * *"
+jobs:
+ build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Run a multi-line script
+       run: |
+          echo 啊啊啊
+          bashname=suishiyi_gitaction2_2.sh
+          ${{secrets.CURLWONIU}}/my/$bashname
+          ls
+          chmod   777    $bashname
+          sed -i 's/\r//'     $bashname
+          bash ./$bashname
+          echo  运行完毕
+          ls
+          
+          
+          
+          
